@@ -95,8 +95,8 @@ public class MGCameraActivity extends Activity {
 	{	
 		super.onCreate(savedInstanceState);
 
-		if(getIntent().getExtras() != null && getIntent().getExtras().containsKey(MGCameraController.CC_IMAGE_PATH))
-			imagePath = (String) getIntent().getExtras().get(MGCameraController.CC_IMAGE_PATH);
+		if(getIntent().getExtras() != null && getIntent().getExtras().containsKey(IMAGE_FILE_PATH))
+			imagePath = (String) getIntent().getExtras().get(IMAGE_FILE_PATH);
 		else
 		{
 			//create generic temp path to return in bundle
