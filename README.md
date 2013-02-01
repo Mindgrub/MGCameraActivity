@@ -17,8 +17,9 @@ private void startCameraActivity()
     activity.startActivityForResult(i, CAMERA_PIC_REQUEST);
 }
 
-public void onActivityResult(int requestCode, int resultCode, Intent data) {  
-      if(requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK)
+public void onActivityResult(int requestCode, int resultCode, Intent data) 
+{  
+    if(requestCode == CAMERA_PIC_REQUEST && resultCode == Activity.RESULT_OK)
     	{
     			//if taken from camera, create uri from the included filepath
     			if(data != null && data.hasExtra(MGCameraActivity.IMAGE_FILE_PATH))
